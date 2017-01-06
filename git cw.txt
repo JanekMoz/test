@@ -1,0 +1,277 @@
+
+Jan@Seus MINGW64 ~/Desktop/projekty/projekt git
+$ git init
+Initialized empty Git repository in C:/Users/Jan/Desktop/projekty/projekt git/.g                                                                                                                                                 it/
+
+Jan@Seus MINGW64 ~/Desktop/projekty/projekt git (master)
+$ touch index.html
+
+Jan@Seus MINGW64 ~/Desktop/projekty/projekt git (master)
+$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Jan@Seus MINGW64 ~/Desktop/projekty/projekt git (master)
+$ git add index.html
+
+Jan@Seus MINGW64 ~/Desktop/projekty/projekt git (master)
+$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   index.html
+
+
+Jan@Seus MINGW64 ~/Desktop/projekty/projekt git (master)
+$ git commit -m "init"
+[master (root-commit) 835904a] init
+ Committer: Jan Mozyrko <Jan Mozyrko>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+
+Jan@Seus MINGW64 ~/Desktop/projekty/projekt git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Jan@Seus MINGW64 ~/Desktop/projekty/projekt git (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Jan@Seus MINGW64 ~/Desktop/projekty/projekt git (master)
+$ git diff
+diff --git a/index.html b/index.html
+index e69de29..563c1c0 100644
+--- a/index.html
++++ b/index.html
+@@ -0,0 +1,44 @@
++ <!DOCTYPE html>
++<html>
++  <head>
++    <meta charset="UTF-8">
++    <title>Moja strona</title>
++  </head>
++ <body>
++        <h1>
++               Witaj na mojej stronie
++        </h1>
++        <h2>
++       Moje hobby
++        </h2>
++        <p>
++        Ryby
++        </p>
++     <h2>
++       Moja muzyka
++     </h2>
++        <p>
++          Metal
++        </p>
++      <h2>
++       Fajne strony
++      </h2>
++        <p>
++        <a href="http://janwedzi.pl" target="_blank">
++        Janwedzi.pl
++        </a>
++        </p>
++        <p>
++        <a href="http://cowewroclawiu.pl" target="_blank">
++            Blog
++        </a>
++        </p>
++        <p>
++        <a href="https://scr.hu/mX5PAm" target="_blank">
++         Wynik w3
++        </a>
++        </p>
++     <img src="https://static.pexels.com/photos/126369/pexels-photo-126369-large.jpeg" alt="foto jezioro">
++     <img src="https://static.pexels.com/photos/39854/fisherman-fishing-reel-river-39854-large.jpeg" alt="wedkarz">
++ </body>
++</html>
+
+Jan@Seus MINGW64 ~/Desktop/projekty/projekt git (master)
+$ git add index.
+fatal: pathspec 'index.' did not match any files
+
+Jan@Seus MINGW64 ~/Desktop/projekty/projekt git (master)
+$ git add .
+
+Jan@Seus MINGW64 ~/Desktop/projekty/projekt git (master)
+$ git commit
+[master 3566dbe] zmiana index
+ Committer: Jan Mozyrko <Jan Mozyrko>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 44 insertions(+)
+
+Jan@Seus MINGW64 ~/Desktop/projekty/projekt git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Jan@Seus MINGW64 ~/Desktop/projekty/projekt git (master)
+$ git diff
+diff --git a/index.html b/index.html
+index 563c1c0..5b92e74 100644
+--- a/index.html
++++ b/index.html
+@@ -6,7 +6,7 @@
+   </head>
+  <body>
+         <h1>
+-               Witaj na mojej stronie
++               Witaj na mojej stronie fggtb34t56h345h6f43gq3
+         </h1>
+         <h2>
+        Moje hobby
+
+Jan@Seus MINGW64 ~/Desktop/projekty/projekt git (master)
+$ git add .
+
+Jan@Seus MINGW64 ~/Desktop/projekty/projekt git (master)
+$ git commit -m "cos tam"
+[master 4ec7062] cos tam
+ Committer: Jan Mozyrko <Jan Mozyrko>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Jan@Seus MINGW64 ~/Desktop/projekty/projekt git (master)
+$ git remote -v
+
+Jan@Seus MINGW64 ~/Desktop/projekty/projekt git (master)
+$ git log
+commit 4ec70629f1da71b04e631003ddbb0c0c47415995
+Author: Jan Mozyrko <Jan Mozyrko>
+Date:   Wed Dec 21 18:17:59 2016 +0100
+
+    cos tam
+
+commit 3566dbe0dd8252bae0a6509b1c61e753b759a1ab
+Author: Jan Mozyrko <Jan Mozyrko>
+Date:   Wed Dec 21 18:12:35 2016 +0100
+
+    zmiana index
+
+commit 835904ae83652e4c76eec8bf3d0e05eaf6f5b4de
+Author: Jan Mozyrko <Jan Mozyrko>
+Date:   Wed Dec 21 18:09:40 2016 +0100
+
+    init
+
+Jan@Seus MINGW64 ~/Desktop/projekty/projekt git (master)
+$  +
+bash: +: command not found
+
+Jan@Seus MINGW64 ~/Desktop/projekty/projekt git (master)
+$ git remote add origin https://github.com/JanekMoz/test.git
+
+Jan@Seus MINGW64 ~/Desktop/projekty/projekt git (master)
+$ git remote -v
+origin  https://github.com/JanekMoz/test.git (fetch)
+origin  https://github.com/JanekMoz/test.git (push)
+
+Jan@Seus MINGW64 ~/Desktop/projekty/projekt git (master)
+$ git push origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com/': JanekMoz
+Counting objects: 9, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (9/9), 1.00 KiB | 0 bytes/s, done.
+Total 9 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/JanekMoz/test.git
+ * [new branch]      master -> master
+
+Jan@Seus MINGW64 ~/Desktop/projekty/projekt git (master)
+$ touch .gitignore
+
+Jan@Seus MINGW64 ~/Desktop/projekty/projekt git (master)
+$ touch test.txt
+
+Jan@Seus MINGW64 ~/Desktop/projekty/projekt git (master)
+$ git staus
+git: 'staus' is not a git command. See 'git --help'.
+
+Did you mean this?
+        status
+
+Jan@Seus MINGW64 ~/Desktop/projekty/projekt git (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .gitignore
+        test.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Jan@Seus MINGW64 ~/Desktop/projekty/projekt git (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Jan@Seus MINGW64 ~/Desktop/projekty/projekt git (master)
+$ ^C
+
+Jan@Seus MINGW64 ~/Desktop/projekty/projekt git (master)
+$
